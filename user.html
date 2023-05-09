@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательская информация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="user-form">
+        <h1>Пользовательская информация</h1>
+        <form id="form">
+            <div class="box">
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="first-name">Имя:</label>
+                        <p class="error" id="first-name-error"></p>
+                    </div>
+                    <input type="text" id="first-name" name="first-name" placeholder="Ярослава" required>
+                </div>
+
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="last-name">Фамилия:</label>
+                        <p class="error" id="last-name-error"></p>
+                    </div>
+
+                    <input type="text" id="last-name" name="last-name" placeholder="Марченко" required>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="birth-year">Год рождения:</label>
+                        <p class="error" id="birth-year-error"></p>
+                    </div>
+                    <input type="number" id="birth-year" name="birth-year" min="1900" max="2023" placeholder="1995" required>
+                </div>
+
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="gender">Пол:</label>
+                        <p class="error" id="gender-error"></p>
+                    </div>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Выберите пол</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="phone">Номер телефона:</label>
+                        <p class="error" id="phone-error"></p>
+                    </div>
+                    <input type="text" id="phone" name="phone" placeholder="38(063)513-57-25">
+                </div>
+
+                <div class="flex">
+                    <div class="box-lable">
+                        <label for="skype">Skype:</label>
+                        <p class="error" id="skype-error"></p>
+                    </div>
+                    <input type="text" id="skype" name="skype" placeholder="FortuneFame123">
+                </div>
+            </div>
+        </form>
+        <div class="box-btn">
+            <button type="button" class="btn" id="save">Save</button>
+            <button type="button" class="btn" id="exit">Exit</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
